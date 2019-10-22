@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/CL1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#333f5c"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1">
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25227964" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50364965" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7518248" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvpatty1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline13"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/guideline12">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imgpatties"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:src="@drawable/patty"
+                    android:padding="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvcheese"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            app:layout_constraintStart_toEndOf="@id/guideline13"
+            app:layout_constraintEnd_toStartOf="@id/guideline14"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/guideline12">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imgcheese"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/cheese"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvlettuce"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            app:layout_constraintStart_toEndOf="@id/guideline14"
+            app:layout_constraintEnd_toStartOf="@id/guideline15"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/guideline12">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imglettuce"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/greenlettuce"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="5dp"
+            app:cardElevation="20dp"
+            app:layout_constraintStart_toEndOf="@id/guideline15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/guideline12">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imgonios"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/onions"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="top|center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline13"
+            app:layout_constraintTop_toBottomOf="@id/guideline12"
+            app:layout_constraintBottom_toTopOf="@id/t2"
+            />
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="00.00"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="top|center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline13"
+            app:layout_constraintTop_toBottomOf="@+id/t1"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="top|center"
+            app:layout_constraintStart_toEndOf="@id/guideline13"
+            app:layout_constraintEnd_toStartOf="@id/guideline14"
+            app:layout_constraintTop_toBottomOf="@id/guideline12"
+            app:layout_constraintBottom_toTopOf="@id/t4"
+            />
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="00.00"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="top|center"
+            app:layout_constraintStart_toEndOf="@id/guideline13"
+            app:layout_constraintEnd_toStartOf="@id/guideline14"
+            app:layout_constraintTop_toBottomOf="@+id/t3"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            />
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="top|center"
+            app:layout_constraintStart_toEndOf="@id/guideline14"
+            app:layout_constraintEnd_toStartOf="@id/guideline15"
+            app:layout_constraintTop_toBottomOf="@id/guideline12"
+            app:layout_constraintBottom_toTopOf="@id/t6"
+            />
+        <TextView
+            android:id="@+id/t6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="00.00"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="top|center"
+            app:layout_constraintStart_toEndOf="@id/guideline14"
+            app:layout_constraintEnd_toStartOf="@id/guideline15"
+            app:layout_constraintTop_toBottomOf="@+id/t5"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            />
+
+        <TextView
+            android:id="@+id/t7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="top|center"
+            app:layout_constraintStart_toEndOf="@id/guideline15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline12"
+            app:layout_constraintBottom_toTopOf="@id/t8"
+            />
+        <TextView
+            android:id="@+id/t8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="00.00"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="top|center"
+            app:layout_constraintStart_toEndOf="@id/guideline15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t7"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="20dp"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintEnd_toStartOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        app:layout_constraintBottom_toTopOf="@id/guideline5">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideLettuce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.93"/>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideCheese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.9"/>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guidePatty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.83"/>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideTomato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.8"/>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideCucumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.75"/>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideOnions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.73"/>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideEggs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.69"/>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideBacon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.65"/>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideBunsTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.65"/>
+
+            <ImageView
+                android:id="@+id/check"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circlebackgroundblack"
+                android:src="@drawable/ic_check_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.969"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.032" />
+
+            <ImageView
+                android:id="@+id/reset"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circlebackgroundblack"
+                android:src="@drawable/ic_autorenew_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.032" />
+
+            <ImageView
+                android:id="@+id/targetbunsbottom"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/bunsbottoms"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ImageView
+                android:id="@+id/targetgreenletuce"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/guideLettuce"/>
+
+            <ImageView
+                android:id="@+id/targetcheese"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/guideCheese"/>
+
+            <ImageView
+                android:id="@+id/targetpatty"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/guidePatty"/>
+
+            <ImageView
+                android:id="@+id/targettomato"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/guideTomato"/>
+
+            <ImageView
+                android:id="@+id/targetcucumber"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/guideCucumber"/>
+
+            <ImageView
+                android:id="@+id/targetonion"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/guideOnions"/>
+
+            <ImageView
+                android:id="@+id/targetegg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/guideEggs"/>
+
+            <ImageView
+                android:id="@+id/targetbacon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/guideBacon"/>
+
+            <ImageView
+                android:id="@+id/targetbunstop"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:padding="5dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/guideBunsTop"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/CL2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#c0c0c0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline1"
+        app:layout_constraintVertical_bias="1.0">
+
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50364965" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline22">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/tomatoes"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/tomato"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline24"
+            app:layout_constraintStart_toEndOf="@id/guideline23"
+            app:layout_constraintTop_toBottomOf="@id/guideline22">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgcucumber"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/cucumber"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline25"
+            app:layout_constraintStart_toEndOf="@id/guideline24"
+            app:layout_constraintTop_toBottomOf="@id/guideline22">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgegg"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/egg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline25"
+            app:layout_constraintTop_toBottomOf="@id/guideline22">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgbacon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/bacon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/t11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="bottom|center"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/t22"
+            app:layout_constraintEnd_toStartOf="@id/guideline23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline21" />
+
+        <TextView
+            android:id="@+id/t22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:text="00.00"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/guideline22"
+            app:layout_constraintEnd_toStartOf="@id/guideline23"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline21"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/t33"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="bottom|center"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/t44"
+            app:layout_constraintEnd_toStartOf="@id/guideline24"
+            app:layout_constraintStart_toEndOf="@id/guideline23"
+            app:layout_constraintTop_toBottomOf="@id/guideline21" />
+
+        <TextView
+            android:id="@+id/t44"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:text="00.00"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/guideline22"
+            app:layout_constraintEnd_toStartOf="@id/guideline24"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/guideline23"
+            app:layout_constraintTop_toBottomOf="@id/t33"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/t55"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="bottom|center"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/t66"
+            app:layout_constraintEnd_toStartOf="@id/guideline25"
+            app:layout_constraintStart_toEndOf="@id/guideline24"
+            app:layout_constraintTop_toBottomOf="@id/guideline21" />
+
+        <TextView
+            android:id="@+id/t66"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:text="00.00"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/guideline22"
+            app:layout_constraintEnd_toStartOf="@id/guideline25"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/guideline24"
+            app:layout_constraintTop_toBottomOf="@id/t33"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/t77"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="bottom|center"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/t88"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline25"
+            app:layout_constraintTop_toBottomOf="@id/guideline21" />
+
+        <TextView
+            android:id="@+id/t88"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:text="00.00"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/guideline22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/guideline25"
+            app:layout_constraintTop_toBottomOf="@id/t77"
+            app:layout_constraintVertical_bias="1.0" />
+    </android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/etnameburger"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Name your burger"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:digits="0123456789 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintEnd_toStartOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@id/guideline5"
+        />
+
+</android.support.constraint.ConstraintLayout>

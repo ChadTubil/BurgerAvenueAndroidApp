@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="330dp"
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:background="#333f5c"
+    android:layout_gravity="center"
+    app:layout_constraintCircleRadius="20dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/cartCloseBtn"
+        android:layout_gravity="end"
+        android:background="@drawable/circlebackground"
+        android:text="X"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cartProdName"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Product Name"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+
+        <!--<TextView-->
+            <!--android:id="@+id/cartProdPrice"-->
+            <!--android:layout_width="296dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Price"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="24sp"-->
+            <!--android:textStyle="bold"-->
+
+            <!--/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#d6d1ce"
+                app:cardCornerRadius="28dp">
+
+                <Button
+                    android:id="@+id/cartProdMinus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal|center_vertical|start"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/qqqq"
+                    android:text="-"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cartProdQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="1"
+                    android:textColor="#333f5c"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/cartProdPlus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal|center_vertical|end"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/qqqq"
+                    android:text="+"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="28dp"
+            android:backgroundTint="#ff850b"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/cartAddBtn">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="UPDATE"
+                android:textSize="24sp"
+                android:textColor="#333f5c"
+                android:textStyle="bold"
+                android:gravity="center_horizontal|center_vertical" />
+
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:cardCornerRadius="28dp"
+                android:backgroundTint="#ff850b"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/cartRemove">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Remove"
+                    android:textSize="24sp"
+                    android:textColor="#333f5c"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal|center_vertical" />
+
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

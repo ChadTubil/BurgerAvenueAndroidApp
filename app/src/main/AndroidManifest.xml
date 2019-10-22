@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chadd.burgeravenueV2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGEead" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_iconqq"
+        android:label="Burger Avenue"
+        android:roundIcon="@mipmap/ic_launcher_iconqq"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CreateAccountActivity" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".UpdateAccountActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".CartListActivity" />
+        <activity android:name=".QueueActivity" />
+        <activity android:name=".PayAsYouOrderActivity" />
+        <activity android:name=".CreateActivity" />
+        <activity android:name=".MAMCart" />
+        <activity android:name=".RewardNCash" />
+        <activity android:name=".RewardNCashPayment"></activity>
+    </application>
+
+</manifest>

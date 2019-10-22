@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="300dp"
+    android:layout_width="350dp"
+    android:background="#333f5c"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="X"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/circlebackground"
+        android:layout_gravity="end"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvx"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please choose a"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mode of payment"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnCash"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonstyle"
+        android:text="CASH"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="ShowCash"
+        />
+
+    <Button
+        android:id="@+id/btnRewardPoints"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonstyle"
+        android:text="REWARD POINTS"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="ShowPoints"
+        />
+
+</LinearLayout>

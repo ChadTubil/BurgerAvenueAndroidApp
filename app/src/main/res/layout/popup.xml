@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="400dp"
+    android:layout_width="320dp"
+    android:padding="5dp"
+    android:background="#333f5c"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:text="X"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/circlebackground"
+            android:layout_gravity="end"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/tvx"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="215dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-25dp"
+            android:src="@drawable/qwe" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Enter your email address"
+            android:background="@drawable/edittextstyle"
+            android:layout_marginTop="15dp"
+            />
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:text="SUBMIT" />
+
+    </LinearLayout>
+
+</LinearLayout>
